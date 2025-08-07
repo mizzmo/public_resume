@@ -1,0 +1,23 @@
+{
+  "name": "resume_page",
+  "version": "1.0.0",
+  "description": "Personal Resume Page displaying skills and achievements etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mizzmo/Resume_Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mizzmo/Resume_Page/issues"
+  },
+  "homepage": "https://github.com/mizzmo/Resume_Page#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.1.11"
+  }
+}
