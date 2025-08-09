@@ -7,19 +7,30 @@
 </head>
 <body>
 
+<!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
+
 <section class="bg-sky-950 text-white p-4">
     <!-- Introduction Headings -->
-     <div id="Introduction" class="p-4">
-        <h1 id="Main_Heading">Toby Surtees</h1>
-        <h4 title="University of Nottingham 2022-2025">Graduate Software Developer</h4>
-        <p>Resolute Computer Science student at the University of Nottingham with strong interpersonal and communication skills. Equipped with a solid foundation in coding, problem-solving, and teamwork, I am eager to apply my knowledge to real-world challenges, whether independently or as part of a team. Committed to continuous growth, I am seeking opportu-nities to expand my technical expertise and provide meaningful contributions within my field.</p>
+    <div class="flex flex-wrap items-center">
+    <div id="Introduction" class="p-4 basis-2/3 flex justify-center">
+        <div class="max-w-prose">
+        <h1 id="Main_Heading" class="font-bold text-[35px]">Toby Surtees</h1>
+        <h4 class="font-semibold text-[20px] pb-4 pt-1" title="@University of Nottingham 2022-2025">Graduate Software Developer</h4>
+        <p>
+            Resolute Computer Science student at the University of Nottingham with strong interpersonal and communication skills. Equipped with a solid foundation in coding, problem-solving, and teamwork, I am eager to apply my knowledge to real-world challenges, whether independently or as part of a team. Committed to continuous growth, I am seeking opportunities to expand my technical expertise and provide meaningful contributions within my field.
+        </p>
+        </div>
     </div>
 
+    <div class="basis-1/3 p-4 flex justify-center">
+        <img class="w-56 h-auto shadow-md rounded-lg" src="https://drive.google.com/thumbnail?id=1V3S4EX41Ie41dseCe-DWi14LzFdrBpeq&sz=s800" alt="Profile picture">
+    </div>
+    </div>
     <hr>
     <!-- Contents List with links to different points of the page. -->
     <div id="Contents" class="p-4">
-        <h3 class="Sub_Heading">Contents:</h3>
-        <ol>
+        <h3 class="font-semibold pb-1 text-[20px]">Contents:</h3>
+        <ol class="list-disc list-inside">
             <li>Biography</li>
             <li>Projects</li>
             <li>Skills & Certifications</li>
@@ -33,7 +44,7 @@
 
     <!-- Biography Section-->
     <div id="Biography" class="p-4">
-        <h3 class="Sub_Heading">A Short Biography</h3>
+        <h3 class="font-semibold pb-1 text-[20px]">A Short Biography</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget condimentum sapien. Vestibulum feugiat augue in ex lacinia pretium. Nulla sit amet tellus a tortor hendrerit sodales. Sed semper rhoncus sapien, non auctor velit tristique auctor. Maecenas rutrum et purus eu suscipit. Suspendisse potenti. Phasellus in dolor at turpis gravida laoreet. Integer sit amet aliquam nibh, at semper massa. Vestibulum vehicula feugiat dui. Phasellus pretium ultrices faucibus. Pellentesque vestibulum eget lorem ac tristique. Phasellus at magna sagittis, vestibulum tortor eget, condimentum leo. Integer dictum massa eget accumsan egestas. Integer egestas, ante a consequat feugiat, sem dolor dapibus turpis, non condimentum lectus urna in ligula. Vestibulum vulputate et dolor nec lobortis.  </p>
     </div>
 
@@ -42,7 +53,7 @@
 
     <!-- Past Works Section -->
     <div id="Projects" class="p-4">
-        <h3 class="Sub_Heading">Projects</h3>
+        <h3 class="font-semibold pb-1 text-[20px]">Projects</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget condimentum sapien. Vestibulum feugiat augue in ex lacinia pretium. Nulla sit amet tellus a tortor hendrerit sodales. Sed semper rhoncus sapien, non auctor velit tristique auctor. Maecenas rutrum et purus eu suscipit. Suspendisse potenti. Phasellus in dolor at turpis gravida laoreet. Integer sit amet aliquam nibh, at semper massa. Vestibulum vehicula feugiat dui. Phasellus pretium ultrices faucibus. Pellentesque vestibulum eget lorem ac tristique. Phasellus at magna sagittis, vestibulum tortor eget, condimentum leo. Integer dictum massa eget accumsan egestas. Integer egestas, ante a consequat feugiat, sem dolor dapibus turpis, non condimentum lectus urna in ligula. Vestibulum vulputate et dolor nec lobortis. </p>
     </div>
 
@@ -50,7 +61,7 @@
 
     <!-- Skills Section -->
     <div id="Skills" class="p-4">
-        <h3 class="Sub_Heading">Skills & Certifications</h3>
+        <h3 class="font-semibold pb-1 text-[20px]">Skills & Certifications</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget condimentum sapien. Vestibulum feugiat augue in ex lacinia pretium. Nulla sit amet tellus a tortor hendrerit sodales. Sed semper rhoncus sapien, non auctor velit tristique auctor. Maecenas rutrum et purus eu suscipit. Suspendisse potenti. Phasellus in dolor at turpis gravida laoreet. Integer sit amet aliquam nibh, at semper massa. Vestibulum vehicula feugiat dui. Phasellus pretium ultrices faucibus. Pellentesque vestibulum eget lorem ac tristique. Phasellus at magna sagittis, vestibulum tortor eget, condimentum leo. Integer dictum massa eget accumsan egestas. Integer egestas, ante a consequat feugiat, sem dolor dapibus turpis, non condimentum lectus urna in ligula. Vestibulum vulputate et dolor nec lobortis. </p>
     </div>
 
@@ -58,19 +69,19 @@
 
     <!-- Education Section -->
     <div id="Education" class="p-4">
-        <h3 class="Sub_Heading">Education</h3>
-        <div id="Degree">
-            <h4 class="Details_Heading">BSc (Hons) Computer Science, First Class.</h4>
+        <h3 class="font-semibold pb-1 text-[20px]">Education</h3>
+        <div id="Degree" class="py-4">
+            <h4 class="font-semibold">BSc (Hons) Computer Science, First Class.</h4>
             <h5 class="Details_Subheading">University of Nottingham, 2022-2025</h5>
             <p>Short Description of Degree and Skills Aquired.</p>
         </div>
-        <div id="A-Level">
-            <h4 class="Details_Heading">A*AB A-Level Computer Science, Mathematics and Physics, respectively.</h4>
+        <div id="A-Level" class="py-4">
+            <h4 class="font-semibold">A*AB A-Level Computer Science, Mathematics and Physics, respectively.</h4>
             <h5 class="Details_Subheading">Hall Cross Academy, 2020-2022</h5>
             <p>Short Description of Degree and Skills Aquired.</p>
         </div>
-        <div id="GCSE">
-            <h4 class="Details_Heading">10 GCSEs, notably: Business Studies Grade 9, English Literature & Language Grade 8, Computer Science Grade 7.</h4>
+        <div id="GCSE" class="py-4">
+            <h4 class="font-semibold">10 GCSEs, notably: Business Studies Grade 9, English Literature & Language Grade 8, Computer Science Grade 7.</h4>
             <h5 class="Details_Subheading">Hall Cross Academy, 2015-2020</h5>
             <p>Short Description of Degree and Skills Aquired.</p>
         </div>
@@ -80,14 +91,14 @@
 
     <!-- Work Experience -->
     <div id="Work_Experience" class="p-4">
-        <h3 class="Sub_Heading">Work Experience</h3>
-        <div id="Sainsburys">
-            <h4 class="Details_Heading">Level 2 Trading Assistant</h4>
+        <h3 class="font-semibold pb-1 text-[20px]">Work Experience</h3>
+        <div id="Sainsburys" class="py-4">
+            <h4 class="font-semibold">Level 2 Trading Assistant</h4>
             <h5 class="Details_Subheading">Sainsbury's PLC, 2024</h5>
             <p>Short Description of Degree and Skills Aquired.</p>
         </div>
-        <div id="Pizza_Hut">
-            <h4 class="Details_Heading">Cross-Trained Team Member</h4>
+        <div id="Pizza_Hut" class="py-4">
+            <h4 class="font-semibold">Cross-Trained Team Member</h4>
             <h5 class="Details_Subheading">Pizza Hut UK LTD, 2021-2022</h5>
             <p>Short Description of Degree and Skills Aquired.</p>
         </div>
@@ -97,7 +108,7 @@
 
     <!-- Contact Information Section -->
     <div id="Contact_Details" class="p-4">
-        <h3 class="Sub_Heading">Contact Details</h3>
+        <h3 class="font-semibold pb-1 text-[20px]">Contact Details</h3>
         <ul>
             <li title="E-mail Address">E-Mail: <a href="mailto:tobysurtees@gmail.com" class="underline hover:text-gray-400">tobysurtees@gmail.com</a></li>
             <li title="GitHub Profile">GitHub: <a href = "https://github.com/mizzmo" class="underline hover:text-gray-400">@mizzmo</a></li>
