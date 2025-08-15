@@ -9,19 +9,20 @@
 
 <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
 
-<section class="bg-sky-950 text-white p-4">
+<section class="bg-white text-black p-4">
     <!-- Introduction Headings -->
-    <div class="flex flex-row gap-8 justify-center">
-        <div id="Introduction" class="p-4 flex justify-center">
-            <div class="max-w-prose">
-            <h1 id="Main_Heading" class="font-bold text-[35px]">Toby Surtees</h1>
-            <h4 class="font-semibold text-[20px] pb-4 pt-1 " title="@University of Nottingham 2022-2025">Graduate Software Developer</h4>
-            <p>
-                Resolute Computer Science student at the University of Nottingham with strong interpersonal and communication skills. Equipped with a solid foundation in coding, problem-solving, and teamwork, I am eager to apply my knowledge to real-world challenges, whether independently or as part of a team. Committed to continuous growth, I am seeking opportunities to expand my technical expertise and provide meaningful contributions within my field.
-            </p>
+    <div class="flex flex-row gap-8 justify-center content-center">
+        <div id="Introduction" class="p-4 flex justify-center gap-4">
+            <div class="shrink content-center border-black border-r-1 p-4">
+                <h1 id="Main_Heading" class="font-bold text-[60px]">Toby Surtees</h1>
+                <h4 class="font-semibold text-[20px] pb-4 pt-1 " title="@University of Nottingham 2022-2025">Graduate Software Developer</h4>
+            </div>
+            <div class="max-w-prose content-center">
+                <p>
+                    Resolute Computer Science student at the University of Nottingham with strong interpersonal and communication skills. Equipped with a solid foundation in coding, problem-solving, and teamwork, I am eager to apply my knowledge to real-world challenges, whether independently or as part of a team. Committed to continuous growth, I am seeking opportunities to expand my technical expertise and provide meaningful contributions within my field.
+                </p>
             </div>
         </div>
-
         <div class="p-4 flex justify-center">
             <img title="Toby Surtees Profile Picture" class="w-56 h-auto shadow-md rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" src="https://drive.google.com/thumbnail?id=1V3S4EX41Ie41dseCe-DWi14LzFdrBpeq&sz=s800" alt="Profile picture">
         </div>
@@ -56,7 +57,7 @@
     <hr>
 
     <!-- Biography Section-->
-    <div id="Biography" class="flex justify-center p-12 bg-gray-500 gap-6">
+    <div id="Biography" class="flex justify-center p-12 bg-gray-500 gap-6 text-white">
         <h3 class="font-semibold pb-1 text-[20px]">A Short Biography</h3>
         <p class="text-pretty max-w-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget condimentum sapien. Vestibulum feugiat augue in ex lacinia pretium. Nulla sit amet tellus a tortor hendrerit sodales. Sed semper rhoncus sapien, non auctor velit tristique auctor. Maecenas rutrum et purus eu suscipit. Suspendisse potenti. Phasellus in dolor at turpis gravida laoreet. Integer sit amet aliquam nibh, at semper massa. Vestibulum vehicula feugiat dui. Phasellus pretium ultrices faucibus. Pellentesque vestibulum eget lorem ac tristique. Phasellus at magna sagittis, vestibulum tortor eget, condimentum leo. Integer dictum massa eget accumsan egestas. Integer egestas, ante a consequat feugiat, sem dolor dapibus turpis, non condimentum lectus urna in ligula. Vestibulum vulputate et dolor nec lobortis.  </p>
     </div>
@@ -67,13 +68,28 @@
     <!-- Past Works Section -->
     <div id="Projects" class="p-12">
         <h3 class="font-semibold pb-4 text-[20px]">Projects</h3>
-        <div class="flex flex-row flex-nowrap gap-8 overflow-x-auto pb-4">
-            <div id="Kerridge_Project" class="p-4 flex-none w-300 h-150 rounded-lg border-4 border-sky-900">
+        <div class="flex flex-row flex-nowrap gap-8 overflow-x-auto pb-4 items-start">
+            <div id="Kerridge_Project" class="p-4 flex-none w-[1200px] h-[600px] rounded-lg border-4 border-sky-900 shrink min-w-xl overflow-y-auto">
                 <h3 class="font-semibold pb-3">Knott.Three.Words - Cross-Platform Route Optimisation & Delivery System using W3W.</h3>
-                <div class="flex">
-                    <p class="text-pretty">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget condimentum sapien. Vestibulum feugiat augue in ex lacinia pretium. Nulla sit amet tellus a tortor hendrerit sodales. Sed semper rhoncus sapien, non auctor velit tristique auctor. Maecenas rutrum et purus eu suscipit. Suspendisse potenti. Phasellus in dolor at turpis gravida laoreet. Integer sit amet aliquam nibh, at semper massa. Vestibulum vehicula feugiat dui. Phasellus pretium ultrices faucibus. Pellentesque vestibulum eget lorem ac tristique. Phasellus at magna sagittis, vestibulum tortor eget, condimentum leo. Integer dictum massa eget accumsan egestas. Integer egestas, ante a consequat feugiat, sem dolor dapibus turpis, non condimentum lectus urna in ligula. Vestibulum vulputate et dolor nec lobortis.  </p>
-                </div>            </div>
-            <div id="Graphics_Project" class="p-3 flex-none w-300 h-150 rounded-lg border-4 border-sky-900">
+                <div class="max-h-[150px]">
+                    <div>
+                        <p class="font-bold">Description:</p>
+                        <p class="text-wrap">A cross-platform mobile application designed to integrate with current commercial systems; this project is designed to provide optimised delivery routes in the form of What3Words waypoints to delivery drivers, whilst avoiding roads that their vehicles cannot pass through (e.g. HGVs and weak bridges). The stimulus for this project was the delivery of construction materials to large sites, such as HS2, that do not have traditional postcodes, which is highly relevant to clients of our industry sponsor. The application is built in React Native, with a REST API back-end built with Spring Boot. We have tested the application with a mock commercial system, however the next steps for the project would be to integrate it into the workflow of a real-life company.</p>
+                        <br>
+                        <p class="font-bold">Details:</p>
+                        <p>This project was made in collaboration with Kerridge Commercial Systems (Now <a class="underline text-blue-500" href="https://www.kerridgecs.com/">Klipboard</a>)
+                            in 2024. My role in the development was as a back-end team lead, where I supervised a team of 4 in the production of the Java based route plotting system, app cloud storage, and integration with What3Words API.</p>
+                        <br>
+                        <p class="italic">GitHub: Unavailable. Subject to NDA.</p>
+                    </div>
+                    <div class="flex justify-end p-4 shrink min-h-[10px] min-w-[10px]">
+                        <iframe src="https://drive.google.com/file/d/1otijPTd_1Qq3C3nkR-ZhE6lA53pNXaZk/preview" width="640" height="480" allow="autoplay"></iframe>
+                    </div>
+                    
+                    
+                </div>            
+            </div>
+            <div id="Graphics_Project" class="p-3 flex-none w-[1200px] h-[600px] rounded-lg border-4 border-sky-900 shrink min-w-xl">
                 <h3 class="font-semibold pb-4">3D Graphics using OpenGL</h3>
                 <div class="flex">
                     <p class="text-pretty">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget condimentum sapien. Vestibulum feugiat augue in ex lacinia pretium. Nulla sit amet tellus a tortor hendrerit sodales. Sed semper rhoncus sapien, non auctor velit tristique auctor. Maecenas rutrum et purus eu suscipit. Suspendisse potenti. Phasellus in dolor at turpis gravida laoreet. Integer sit amet aliquam nibh, at semper massa. Vestibulum vehicula feugiat dui. Phasellus pretium ultrices faucibus. Pellentesque vestibulum eget lorem ac tristique. Phasellus at magna sagittis, vestibulum tortor eget, condimentum leo. Integer dictum massa eget accumsan egestas. Integer egestas, ante a consequat feugiat, sem dolor dapibus turpis, non condimentum lectus urna in ligula. Vestibulum vulputate et dolor nec lobortis.  </p>
@@ -136,8 +152,8 @@
         <h3 class="font-semibold pb-1 text-[20px]">Contact Details</h3>
         <ul>
             <li title="E-mail Address">E-Mail: <a href="mailto:tobysurtees@gmail.com" class="underline hover:text-gray-400">tobysurtees@gmail.com</a></li>
-            <li title="GitHub Profile">GitHub: <a href = "https://github.com/mizzmo" class="underline hover:text-gray-400">@mizzmo</a></li>
-            <li title="LinkedIn Profile">LinkedIn: <a href = "https://www.linkedin.com/in/toby-surtees/" class="underline hover:text-gray-400">@Toby Surtees</a></li>
+            <li title="GitHub Profile">GitHub: <a href = "https://github.com/mizzmo" class="underline hover:text-gray-400">mizzmo</a></li>
+            <li title="LinkedIn Profile">LinkedIn: <a href = "https://www.linkedin.com/in/toby-surtees/" class="underline hover:text-gray-400">Toby Surtees</a></li>
         </ul>
     </div>
 </section>
