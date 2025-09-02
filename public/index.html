@@ -247,7 +247,7 @@
         <p class="text-pretty max-w-200">HackerRank Java (Basic) Certification - <a href="https://www.hackerrank.com/certificates/bdd0213b5c05" class="underline text-blue-500">Access Certification</a></p>
         <a href="https://drive.google.com/file/d/1cWjRHE91x4yqom42VtVDI9EEiEBnLU2C/view?usp=sharing"><img title="HackerRank Java (Basic)" 
         class="w-56 h-auto shadow-md rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" 
-        src="https://drive.google.com/thumbnail?id=1cWjRHE91x4yqom42VtVDI9EEiEBnLU2C&sz=s800" alt="HackerRank Java (Basic)">
+        src="https://drive.google.com/thumbnail?id=1cWjRHE91x4yqom42VtVDI9EEiEBnLU2C&sz=s800" alt="HackerRank Java (Basic)"></a>
     </div>
 
     <hr>
@@ -311,14 +311,38 @@
     <hr>
 
     <!-- Contact Information Section -->
-    <div id="Contact_Details" class="p-12">
+    <div id="Contact_Details" class="p-12 flex flex-row justify-normal gap-25">
+        <div>
         <h3 class="font-semibold pb-1 text-[20px]">Contact Details</h3>
         <ul>
             <li title="E-mail Address">E-Mail: <a href="mailto:tobysurtees@gmail.com" class="underline hover:text-gray-400">tobysurtees@gmail.com</a></li>
             <li title="GitHub Profile">GitHub: <a href = "https://github.com/mizzmo" class="underline hover:text-gray-400">mizzmo</a></li>
             <li title="LinkedIn Profile">LinkedIn: <a href = "https://www.linkedin.com/in/toby-surtees/" class="underline hover:text-gray-400">Toby Surtees</a></li>
         </ul>
+        </div>
+        <div id="contact_form" class="flex justify-center">
+            <form action="contact.php" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 max-w-200">
+                    <label for="name" class="block font-bold mb-2 pt-2">Full Name</label>
+                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3  focus:outline-none focus:shadow-outline" placeholder="Your Name...">
+                    <label for="email" class="block font-bold mb-2 pt-2">Contact E-mail</label>
+                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline" placeholder="Your E-mail...">
+                    <label for="alt_contact" class="block font-bold mb-2 pt-2"><i>(Optional) </i>Alternative Contact Type</label>
+                    <select id="alt_contact" name="alt_contact" class="shadow appearance-none border rounded w-full py-2 px-3focus:outline-none focus:shadow-outline">
+                        <option value="none"> None</option>
+                        <option value="linkedin"> LinkedIn</option>
+                        <option value="phone"> Phone Number</option>
+                        <option value="other"> Other</option>
+                    </select>
+                    <label for="alt_contact_val" class="block font-bold mb-2 pt-2"><i>(Optional) </i>Alternative Contact:<i></i> </label>
+                    <input type="alt_contact_val" id="alt_contact_val" name="alt_contact_val" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Alternative Contact...">
+                    <label for="subject" class="block font-bold mb-2 pt-2">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Message..." class="shadow appearance-none border rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline"></textarea>
+                    <input type="submit" value="Submit" class="bg-sky-900 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            </form>
+        </div>
     </div>
+
+    
 
     <div class="flex justify-center">
         Copyright Toby Surtees (2025) - All Rights Reserved.
