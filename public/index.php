@@ -324,6 +324,7 @@
             <form action="contact.php" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 max-w-200">
                     <label for="name" class="block font-bold mb-2 pt-2">Full Name</label>
                     <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3  focus:outline-none focus:shadow-outline" placeholder="Your Name...">
+                    <span class="error">* <?php echo $nameErr;?></span>
                     <label for="email" class="block font-bold mb-2 pt-2">Contact E-mail</label>
                     <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline" placeholder="Your E-mail...">
                     <label for="alt_contact" class="block font-bold mb-2 pt-2"><i>(Optional) </i>Alternative Contact Type</label>

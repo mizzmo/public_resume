@@ -4,6 +4,7 @@ $nameErr = "";
 $emailErr = "";
 $subjectErr = "";
 
+// Validation Steps
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(empty($_POST["name"])){
         $nameErr = "You must enter a name in this field."
@@ -33,25 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 
-
-// Validation Step
-if (strcmp($contact_sender, "")){
-    echo("Name is Empty")
-}
-
-if (strcmp($contact_email, "")){
-    echo("Email is Empty")
-}
-
-if (strcmp($contact_alt_val, "")){
-    echo("Alternative Contact is Empty")
-}
-
-if (strcmp($subject_body, "")){
-    echo("Subject is Empty")
-}
-
-
+// Test input data for html
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
