@@ -7,7 +7,9 @@
 </head>
 <body>
 
-<!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
+<!-- 
+    npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch 
+-->
 
 <section class="bg-white text-black p-4">
     <!-- Introduction Headings -->
@@ -28,7 +30,7 @@
         </div>
         <div class="p-4 flex justify-center">
             <img title="Toby Surtees Profile Picture" class="w-56 h-auto shadow-md rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" 
-            src="https://drive.google.com/uc?export=view&id=1V3S4EX41Ie41dseCe-DWi14LzFdrBpeq&sz=s800" alt="Profile picture">
+            src="images/profile_picture.jpg" alt="Profile picture">
         </div>
     </div>
     <hr>
@@ -108,28 +110,31 @@
                     <div class="flex flex-row flex-wrap gap-8 justify-center">
                         <div class="block">
                             <p class="font-bold">Abstract: </p>
-                            <a href="https://drive.google.com/file/d/1Q7cGhzbgriWM3kQ-HUxDQ39bmIpeWsdu/view?usp=sharing"><img title="Dissertation Abstract Preview" 
+                            <a href="images/dissertation_abstract.jpg"><img title="Dissertation Abstract Preview" 
                                 class="w-56 h-auto shadow-md rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" 
-                                src="https://drive.google.com/thumbnail?id=1Q7cGhzbgriWM3kQ-HUxDQ39bmIpeWsdu&sz=s800" alt="Dissertation Abstract">
+                                src="images/dissertation_abstract.jpg" alt="Dissertation Abstract">
                             </a>
                         </div>
                         <div class="block">
                             <p class="font-bold">Full Paper: </p>
-                            <a href="https://drive.google.com/file/d/1GBpgf2c81X0O4jVAzOMmLcvEqQbocByj/view?usp=sharing"><img title="Dissertation Paper Preview" 
+                            <a href="images/dissertation_no_id.pdf"><img title="Dissertation Paper Preview" 
                                 class="w-56 h-auto shadow-md rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" 
-                                src="https://drive.google.com/thumbnail?id=1GBpgf2c81X0O4jVAzOMmLcvEqQbocByj&sz=s800" alt="Dissertation Front Cover">
+                                src="images/dissertation_front_cover.jpg" alt="Dissertation Front Cover">
                             </a>
                         </div>
                         <div class="block">
                             <p class="font-bold">AAIC2025 Poster: </p>
-                            <a href="https://drive.google.com/file/d/1GV8nWYBQmi4QU6_y131UN_7arTXCv-V5/view?usp=sharing"><img title="AAIC Poster Preview" 
+                            <a href="images/AAIC_Poster_Submission.jpg"><img title="AAIC Poster Preview" 
                                 class="w-56 h-auto shadow-md rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" 
-                                src="https://drive.google.com/thumbnail?id=1GV8nWYBQmi4QU6_y131UN_7arTXCv-V5&sz=s800" alt="AAIC2025 Poster">
+                                src="images/AAIC_Poster_Submission.jpg" alt="AAIC2025 Poster">
                             </a>
                         </div>
                         <div class="block p-4">
                             <p class="font-bold pb-4">Summary Video:</p>
-                            <iframe class=" border-4 border-sky-900 rounded-md shadow-xl" src="https://drive.google.com/file/d/1OWr8KaZivZTzQQ11cz1TzEFuN2cqPic5/preview" width="640" height="480" allow="autoplay" title="Dissertation Demonstration Video"></iframe>
+                            <iframe class=" border-4 border-sky-900 rounded-md shadow-xl" 
+                                src="https://drive.google.com/file/d/1OWr8KaZivZTzQQ11cz1TzEFuN2cqPic5/preview" 
+                                width="640" height="480" allow="autoplay" title="Dissertation Demonstration Video">
+                            </iframe>
                         </div>
                     </div>
                 </div>
@@ -166,7 +171,10 @@
                         <p><b>Project Media: </b></p>
                     </div>
                     <div class="flex justify-center p-4 shrink min-h-[10px] min-w-[10px]">
-                        <iframe class="border-4 border-sky-900 rounded-md shadow-xl" src="https://drive.google.com/file/d/1otijPTd_1Qq3C3nkR-ZhE6lA53pNXaZk/preview" width="640" height="480" allow="autoplay" title="W3W Demonstration Video"></iframe>
+                        <iframe class="border-4 border-sky-900 rounded-md shadow-xl" 
+                            src="https://drive.google.com/file/d/1otijPTd_1Qq3C3nkR-ZhE6lA53pNXaZk/preview" 
+                            width="640" height="480" allow="autoplay" title="W3W Demonstration Video">
+                        </iframe>
                     </div>
                     
                     
@@ -246,9 +254,9 @@
         </ul>
         <p class="font-bold">Certifications: </p>
         <p class="text-pretty max-w-200">HackerRank Java (Basic) Certification - <a href="https://www.hackerrank.com/certificates/bdd0213b5c05" class="underline text-blue-500">Access Certification</a></p>
-        <a href="https://drive.google.com/file/d/1cWjRHE91x4yqom42VtVDI9EEiEBnLU2C/view?usp=sharing"><img title="HackerRank Java (Basic)" 
+        <a href="images/hackerrank_java_basic.png"><img title="HackerRank Java (Basic)" 
         class="w-56 h-auto shadow-md rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" 
-        src="https://drive.google.com/thumbnail?id=1cWjRHE91x4yqom42VtVDI9EEiEBnLU2C&sz=s800" alt="HackerRank Java (Basic)"></a>
+        src="images/hackerrank_java_basic.png" alt="HackerRank Java (Basic)"></a>
     </div>
 
     <hr>
