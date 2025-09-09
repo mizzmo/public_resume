@@ -1,4 +1,5 @@
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en-GB">
 <head>
     <link rel="stylesheet" href="../src/input.css">
@@ -320,7 +321,42 @@
     <hr>
 
     <!-- Contact Information Section -->
-    <div id="Contact_Details" class="p-12 flex flex-row justify-normal gap-25">
+    <div id="Contact_Details" class="p-12 flex flex-column justify-center gap-25">
+        <div id="contact_form" class="flex justify-center">
+            <form action="https://formspree.io/f/xldwzdyn" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 max-w-200 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                <h3 class="font-semibold pb-1 text-[20px]">Get in touch</h3>
+                <!-- Name -->
+                <label for="name" class="block font-bold mb-2 pt-2">Full Name:</label>
+                <input required type="text" name="name" placeholder="Your name..." class="shadow appearance-none border rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline">
+
+                <!-- Email -->
+                <label for="email" class="block font-bold mb-2 pt-2">Contact E-mail:</label>
+                <input required type="email" name="email" placeholder="Your e-mail address..." class="shadow appearance-none border rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline">
+
+                <!-- Alternative contact type -->
+                <label for="alt_contact" class="block font-bold mb-2 pt-2"><i>(Optional) </i>Alternative Contact Type:</label>
+                <select id="alt_contact" name="alt_contact" class="shadow appearance-none border rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline">
+                    <option value="none">None</option>
+                    <option value="linkedin">LinkedIn</option>
+                    <option value="phone">Phone Number</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <!-- Alternative contact value -->
+                <label for="alt_contact_val" class="block font-bold mb-2 pt-2"><i>(Optional) </i>Alternative Contact:</label>
+                <input type="text" id="alt_contact_val" name="alt_contact_val" class="shadow appearance-none border rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline" placeholder="Your Alternative Contact...">
+
+                <!-- Subject -->
+                <label for="subject" class="block font-bold mb-2 pt-2">Message:</label>
+                <textarea required name="subject" 
+                class="shadow appearance-none border rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline" placeholder="Your message here..."></textarea>
+                <br>
+
+                <!-- Submit -->
+                <input type="submit" value="Submit" class="bg-sky-900 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-2">
+            </form>
+        </div>
+
         <div>
         <h3 class="font-semibold pb-1 text-[20px]">Contact Details</h3>
         <ul>
@@ -329,27 +365,7 @@
             <li title="LinkedIn Profile">LinkedIn: <a href = "https://www.linkedin.com/in/toby-surtees/" class="underline hover:text-gray-400">Toby Surtees</a></li>
         </ul>
         </div>
-        <div id="contact_form" class="flex justify-center">
-            <form action="contact.php" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 max-w-200">
-                    <label for="name" class="block font-bold mb-2 pt-2">Full Name</label>
-                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3  focus:outline-none focus:shadow-outline" placeholder="Your Name...">
-                    <span class="error">* <?php echo $nameErr;?></span>
-                    <label for="email" class="block font-bold mb-2 pt-2">Contact E-mail</label>
-                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline" placeholder="Your E-mail...">
-                    <label for="alt_contact" class="block font-bold mb-2 pt-2"><i>(Optional) </i>Alternative Contact Type</label>
-                    <select id="alt_contact" name="alt_contact" class="shadow appearance-none border rounded w-full py-2 px-3focus:outline-none focus:shadow-outline">
-                        <option value="none"> None</option>
-                        <option value="linkedin"> LinkedIn</option>
-                        <option value="phone"> Phone Number</option>
-                        <option value="other"> Other</option>
-                    </select>
-                    <label for="alt_contact_val" class="block font-bold mb-2 pt-2"><i>(Optional) </i>Alternative Contact:<i></i> </label>
-                    <input type="alt_contact_val" id="alt_contact_val" name="alt_contact_val" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Alternative Contact...">
-                    <label for="subject" class="block font-bold mb-2 pt-2">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Message..." class="shadow appearance-none border rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline"></textarea>
-                    <input type="submit" value="Submit" class="bg-sky-900 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-            </form>
-        </div>
+
     </div>
 
     
