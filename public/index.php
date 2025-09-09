@@ -27,7 +27,8 @@
             </div>
         </div>
         <div class="p-4 flex justify-center">
-            <img title="Toby Surtees Profile Picture" class="w-56 h-auto shadow-md rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" src="https://drive.google.com/thumbnail?id=1V3S4EX41Ie41dseCe-DWi14LzFdrBpeq&sz=s800" alt="Profile picture">
+            <img title="Toby Surtees Profile Picture" class="w-56 h-auto shadow-md rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" 
+            src="https://drive.google.com/uc?export=view&id=1V3S4EX41Ie41dseCe-DWi14LzFdrBpeq&sz=s800" alt="Profile picture">
         </div>
     </div>
     <hr>
