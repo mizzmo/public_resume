@@ -4,22 +4,23 @@
 <head>
     <title>Toby Surtees Portfolio</title>
     <link href="output.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 <!-- 
-    npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch 
+    npx @tailwindcss/cli -i ./src/input.css -o ./docs/output.css --watch
 -->
 
 <section class="bg-white text-black p-4">
     <!-- Introduction Headings -->
-    <div class="flex flex-row gap-8 justify-center content-center">
-        <div id="Introduction" class="p-4 flex justify-center gap-4">
-            <div class="shrink content-center border-black border-r-1 p-4">
+    <div class="flex flex-col lg:flex-row  gap-8 justify-center content-center">
+        <div id="Introduction" class="p-4 flex flex-col lg:flex-row justify-center items-center gap-4">
+            <div class="shrink content-center lg:border-black lg:border-r-1 p-4">
                 <h1 id="Main_Heading" class="font-bold text-[60px] leading-14 pb-2">Toby Surtees</h1>
                 <h4 class="font-semibold text-[20px] pb-4 pt-1 " title="@University of Nottingham 2022-2025">Graduate Software Developer</h4>
             </div>
-            <div class="max-w-prose content-center">
+            <div class="max-w-prose min-w-65 content-center">
                 <p>
                     Resolute Computer Science Graduate from the University of Nottingham with strong interpersonal and communication skills. 
                     Equipped with a solid foundation in coding, problem-solving, and teamwork, I am eager to apply my knowledge to real-world challenges, 
@@ -29,33 +30,33 @@
             </div>
         </div>
         <div class="p-4 flex justify-center">
-            <img title="Toby Surtees Profile Picture" class="w-56 h-auto shadow-md rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" 
+            <img title="Toby Surtees Profile Picture" class="w-auto h-auto max-w-56 max-h-72 shadow-md rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" 
             src="images/profile_picture.jpg" alt="Profile picture">
         </div>
     </div>
     <hr>
     <!-- Contents List with links to different points of the page. -->
-    <div id="Contents" class="p-12">
+    <div id="Contents" class="p-12 w-full">
         <h3 class="font-semibold pb-6 text-[20px]">Contents:</h3>
         <!-- 3x2 List -->
-        <ol class="grid grid-cols-3 gap-4 justify-center text-center text-[20px]">
+        <ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-center text-[20px]">
             <li>
-                <a href="#Biography" class="block shadow-md transition delay-150 duration-300 ease-in-out hover:z-10 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 rounded-lg p-12 border-2 border-sky-900">Biography</a>
+                <a href="#Biography" class="flex items-center justify-center shadow-md transition delay-150 duration-300 ease-in-out hover:z-10 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 rounded-lg h-32 border-2 border-sky-900">Biography</a>
             </li>
             <li>
-                <a href="#Projects" class="block shadow-md transition delay-150 duration-300 ease-in-out hover:z-10 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 rounded-lg p-12 border-2 border-sky-900">Projects</a>
+                <a href="#Projects" class="flex items-center justify-center shadow-md transition delay-150 duration-300 ease-in-out hover:z-10 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 rounded-lg h-32 border-2 border-sky-900">Projects</a>
             </li>
             <li>
-                <a href="#Skills" class="block shadow-md transition delay-150 duration-300 ease-in-out hover:z-10 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 rounded-lg p-12 border-2 border-sky-900">Skills & Certifications</a>
+                <a href="#Skills" class="flex items-center justify-center shadow-md transition delay-150 duration-300 ease-in-out hover:z-10 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 rounded-lg h-32 border-2 border-sky-900">Skills & Certifications</a>
             </li>
             <li>
-                <a href="#Education" class="block shadow-md transition delay-150 duration-300 ease-in-out hover:z-10 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 rounded-lg p-12 border-2 border-sky-900">Education</a>
+                <a href="#Education" class="flex items-center justify-center shadow-md transition delay-150 duration-300 ease-in-out hover:z-10 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 rounded-lg h-32 border-2 border-sky-900">Education</a>
             </li>
             <li>
-                <a href="#Work_Experience" class="block shadow-md transition delay-150 duration-300 ease-in-out hover:z-10 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 rounded-lg p-12 border-2 border-sky-900">Work Experience</a>
+                <a href="#Work_Experience" class="flex items-center justify-center shadow-md transition delay-150 duration-300 ease-in-out hover:z-10 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 rounded-lg h-32 border-2 border-sky-900">Work Experience</a>
             </li>
             <li>
-                <a href="#Contact_Details" class="block shadow-md transition delay-150 duration-300 ease-in-out hover:z-10 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 rounded-lg p-12 border-2 border-sky-900">Contact Details</a>
+                <a href="#Contact_Details" class="flex items-center justify-center shadow-md transition delay-150 duration-300 ease-in-out hover:z-10 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 rounded-lg h-32 border-2 border-sky-900">Contact Details</a>
             </li>
         </ol>
     </div>
