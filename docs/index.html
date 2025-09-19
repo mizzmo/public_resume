@@ -14,7 +14,7 @@
 
 <section class="bg-white text-black p-4">
     <!-- Introduction Headings -->
-    <div class="flex flex-col lg:flex-row  gap-8 justify-center content-center">
+    <div class="flex flex-col lg:flex-row gap-8 justify-center content-center">
         <div id="Introduction" class="p-4 flex flex-col lg:flex-row justify-center items-center gap-4">
             <div class="shrink content-center lg:border-black lg:border-r-1 p-4">
                 <h1 id="Main_Heading" class="font-bold text-[60px] leading-14 pb-2">Toby Surtees</h1>
@@ -64,9 +64,9 @@
     <hr>
 
     <!-- Biography Section-->
-    <div id="Biography" class="flex justify-center p-12 bg-gray-500 gap-6 text-white">
+    <div id="Biography" class="flex flex-col lg:flex-row justify-center p-12 bg-gray-500 gap-6 text-white">
         <h3 class="font-semibold pb-1 text-[20px]">A Short Biography</h3>
-        <p class="text-pretty max-w-200">
+        <p class="text-pretty max-w-200 min-w-65">
             Hello! My name is Toby, and I am a graduate Computer Scientist and Software Developer looking for new and exciting career opportunities. 
             Born in Doncaster, South Yorkshire, in 2004, I quickly fell in love with
             all things tech after being exposed to the cutting-edge Nintendo DSi and early iterations of online Flash games. Since then, my curiosity for the inner workings of programs and software, as well as computer hardware, has 
@@ -84,7 +84,7 @@
     <div id="Projects" class="p-12">
         <h3 class="font-semibold pb-4 text-[20px]">Projects</h3>
         <div class="flex flex-row flex-nowrap gap-8 overflow-x-auto pb-4 items-start">
-            <div id="Dissertation" class="p-4 flex-none w-[1200px] h-[600px] rounded-lg border-4 border-sky-900 shrink min-w-[800px] overflow-y-auto">
+            <div id="Dissertation" class="p-4 flex-none w-[600px] h-[800px] min-w-[600px] lg:w-[1200px] lg:h-[600px] lg:min-w-[800px] rounded-lg border-4 border-sky-900 shrink  overflow-y-auto">
                 <h3 class="font-semibold text-[20px] pb-4">Journaling to Insight - Empowering People with Dementia using AI and Social Robotics.</h3>
                 <div class="max-h-[150px]">
                     <p class="font-bold">Publication:</p>
@@ -130,17 +130,17 @@
                                 src="images/AAIC_Poster_Submission.jpg" alt="AAIC2025 Poster">
                             </a>
                         </div>
-                        <div class="block p-4">
-                            <p class="font-bold pb-4">Summary Video:</p>
-                            <iframe class=" border-4 border-sky-900 rounded-md shadow-xl" 
+                        <div class="block">
+                            <p class="font-bold pb-2">Summary Video:</p>
+                            <iframe class="border-4 border-sky-900 rounded-md shadow-xl w-full h-full" 
                                 src="https://drive.google.com/file/d/1OWr8KaZivZTzQQ11cz1TzEFuN2cqPic5/preview" 
-                                width="640" height="480" allow="autoplay" title="Dissertation Demonstration Video">
+                                allow="autoplay" title="Dissertation Demonstration Video">
                             </iframe>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="Kerridge_Project" class="p-4 flex-none w-[1200px] h-[600px] rounded-lg border-4 border-sky-900 shrink min-w-[800px] overflow-y-auto">
+            <div id="Kerridge_Project" class="p-4 flex-none w-[600px] h-[800px] min-w-[600px] lg:w-[1200px] lg:h-[600px] lg:min-w-[800px] rounded-lg border-4 border-sky-900 shrink  overflow-y-auto">
                 <h3 class="font-semibold pb-3 text-[20px]">Knott.Three.Words - Cross-Platform Route Optimisation & Delivery System using W3W.</h3>
                 <div class="max-h-[150px]">
                     <div>
@@ -172,16 +172,19 @@
                         <p><b>Project Media: </b></p>
                     </div>
                     <div class="flex justify-center p-4 shrink min-h-[10px] min-w-[10px]">
-                        <iframe class="border-4 border-sky-900 rounded-md shadow-xl" 
-                            src="https://drive.google.com/file/d/1otijPTd_1Qq3C3nkR-ZhE6lA53pNXaZk/preview" 
-                            width="640" height="480" allow="autoplay" title="W3W Demonstration Video">
-                        </iframe>
+                        <div class="block">
+                            <p class="font-bold pb-2">Summary Video:</p>
+                            <iframe class="border-4 border-sky-900 rounded-md shadow-xl w-full h-full" 
+                                src="https://drive.google.com/file/d/1otijPTd_1Qq3C3nkR-ZhE6lA53pNXaZk/preview" 
+                                allow="autoplay" title="W3W Demonstration Video">
+                            </iframe>
+                        </div>
                     </div>
                     
                     
                 </div>            
             </div>
-            <div id="Graphics_Project" class="p-4 flex-none w-[1200px] h-[600px] rounded-lg border-4 border-sky-900 shrink min-w-[800px] overflow-y-auto">
+            <div id="Graphics_Project" class="p-4 flex-none w-[600px] h-[800px] min-w-[600px] lg:w-[1200px] lg:h-[600px] lg:min-w-[800px] rounded-lg border-4 border-sky-900 shrink  overflow-y-auto">
                 <h3 class="font-semibold pb-3 text-[20px]">3D Graphics using OpenGL</h3>
                 <div class="max-h-[150px]">
                     <p class="font-bold">Languages & Software:</p>
@@ -197,7 +200,7 @@
                     <p><b>GitHub: </b> <a href="https://github.com/mizzmo/Graphics_Project_Public" class="underline text-blue-500">https://github.com/mizzmo/Graphics_Project_Public</a></p>
                 </div>
             </div>
-            <div id="Snake_Game" class="p-4 flex-none w-[1200px] h-[600px] rounded-lg border-4 border-sky-900 shrink min-w-[800px] overflow-y-auto">
+            <div id="Snake_Game" class="p-4 flex-none w-[600px] h-[800px] lg:w-[1200px] min-w-[600px] lg:h-[600px] lg:min-w-[800px] rounded-lg border-4 border-sky-900 shrink  overflow-y-auto">
                 <h3 class="font-semibold pb-3 text-[20px]">Developing Maintainable Software with a Simple Snake Game</h3>
                 <div class="max-h-[150px]">
 
@@ -216,7 +219,7 @@
                 </div>
                 
             </div>
-            <div id="Portfolio" class="p-4 flex-none w-[1200px] h-[600px] rounded-lg border-4 border-sky-900 shrink min-w-[800px] overflow-y-auto">
+            <div id="Portfolio" class="p-4 flex-none w-[600px] h-[800px] lg:w-[1200px] min-w-[600px] lg:h-[600px] lg:min-w-[800px] rounded-lg border-4 border-sky-900 shrink  overflow-y-auto">
                 <h3 class="font-semibold pb-3 text-[20px]">Personal Portfolio Page</h3>
                 <div class="max-h-[150px]">
 
