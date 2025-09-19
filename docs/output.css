@@ -649,6 +649,11 @@
       flex-direction: row;
     }
   }
+  .md\:break-words {
+    @media (width >= 48rem) {
+      overflow-wrap: break-word;
+    }
+  }
   .lg\:h-\[600px\] {
     @media (width >= 64rem) {
       height: 600px;
@@ -698,6 +703,11 @@
   .lg\:border-black {
     @media (width >= 64rem) {
       border-color: var(--color-black);
+    }
+  }
+  .lg\:break-words {
+    @media (width >= 64rem) {
+      overflow-wrap: break-word;
     }
   }
   .xl\:w-\[1200px\] {
