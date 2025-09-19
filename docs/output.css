@@ -234,6 +234,9 @@
   .min-h-\[280px\] {
     min-height: 280px;
   }
+  .min-h-\[400px\] {
+    min-height: 400px;
+  }
   .w-56 {
     width: calc(var(--spacing) * 56);
   }
@@ -264,6 +267,9 @@
   .max-w-550 {
     max-width: calc(var(--spacing) * 550);
   }
+  .max-w-\[600px\] {
+    max-width: 600px;
+  }
   .max-w-prose {
     max-width: 65ch;
   }
@@ -272,6 +278,9 @@
   }
   .min-w-\[10px\] {
     min-width: 10px;
+  }
+  .min-w-\[280px\] {
+    min-width: 280px;
   }
   .min-w-\[500px\] {
     min-width: 500px;
@@ -302,6 +311,15 @@
   }
   .resize {
     resize: both;
+  }
+  .snap-x {
+    scroll-snap-type: x var(--tw-scroll-snap-strictness);
+  }
+  .snap-mandatory {
+    --tw-scroll-snap-strictness: mandatory;
+  }
+  .snap-center {
+    scroll-snap-align: center;
   }
   .list-inside {
     list-style-position: inside;
@@ -575,6 +593,16 @@
       outline-style: none;
     }
   }
+  .sm\:w-\[80\%\] {
+    @media (width >= 40rem) {
+      width: 80%;
+    }
+  }
+  .sm\:w-\[500px\] {
+    @media (width >= 40rem) {
+      width: 500px;
+    }
+  }
   .sm\:max-w-550 {
     @media (width >= 40rem) {
       max-width: calc(var(--spacing) * 550);
@@ -588,6 +616,16 @@
   .sm\:flex-col {
     @media (width >= 40rem) {
       flex-direction: column;
+    }
+  }
+  .md\:w-\[45\%\] {
+    @media (width >= 48rem) {
+      width: 45%;
+    }
+  }
+  .md\:w-\[600px\] {
+    @media (width >= 48rem) {
+      width: 600px;
     }
   }
   .md\:grid-cols-2 {
@@ -608,6 +646,16 @@
   .lg\:h-\[600px\] {
     @media (width >= 64rem) {
       height: 600px;
+    }
+  }
+  .lg\:w-\[30\%\] {
+    @media (width >= 64rem) {
+      width: 30%;
+    }
+  }
+  .lg\:w-\[800px\] {
+    @media (width >= 64rem) {
+      width: 800px;
     }
   }
   .lg\:w-\[1200px\] {
@@ -646,6 +694,16 @@
       border-color: var(--color-black);
     }
   }
+  .xl\:w-\[1200px\] {
+    @media (width >= 80rem) {
+      width: 1200px;
+    }
+  }
+}
+@property --tw-scroll-snap-strictness {
+  syntax: "*";
+  inherits: false;
+  initial-value: proximity;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -771,6 +829,7 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-scroll-snap-strictness: proximity;
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
